@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_99_co11aps/assets/favicon-da6b3cd0.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    
+    <script type="module" crossorigin src="/js_99_co11aps/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_co11aps/assets/vendor-722ab571.js">
+    <link rel="modulepreload" crossorigin href="/js_99_co11aps/assets/apple-books-logo-60ec3a74.js">
+    <link rel="stylesheet" href="/js_99_co11aps/assets/vendor-a168afd9.css">
+    <link rel="stylesheet" href="/js_99_co11aps/assets/apple-books-logo-2f2463c0.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-body-menu">
+  <header class="header">
+    <div class="header-container">
+      <a class="logo" href="./index.html"><div class="logo"></div> </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="home-link nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="shopping-list-link nav-link" href="./shopping-list.html"
+              >SHOPPING LIST<svg
+                class="shopping-link-icon"
+                width="20"
+                height="20"
+              >
+                <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="checkbox">
+        <!-- light -->
+        <label id="switch" class="switch" aria-label="Theme color switcher">
+          <input type="checkbox" id="slider" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <button
+        class="burger-menu-btn btn-active"
+        type="button"
+        aria-label="Open page menu"
+      >
+        <svg class="header-svg-burger" width="28" height="28">
+          <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+
+      <button
+        class="x-cross-menu-btn"
+        type="button"
+        data-is-open
+        aria-label="close page menu"
+      >
+        <svg class="x-cross-btn-svg" width="28" height="28">
+          <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-x-close"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="backdrop-menu">
+    <div class="nav-container">
+      <nav class="nav-mobil">
+        <ul class="nav-list-mobil">
+          <li class="nav-item-mobil">
+            <a class="home-link-mob" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item-mobil">
+            <a class="shopping-list-link-mob" href="./shopping-list.html"
+              >SHOPPING LIST<svg
+                class="shopping-link-icon-mob"
+                width="20"
+                height="20"
+              >
+                <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <img
+        class="burger-menu-photo"
+        src="/js_99_co11aps/assets/books-mobile-menu-8eca3f0b.png"
+        alt="books"
+      />
+    </div>
+  </div>
+</div>
+
+
+      <section class="content-container">
+        <div class="shopping-side-block">
+          <div class="funds-container">
+  <h3 class="funds-title">
+    Support Ukraine
+    <span
+      ><svg class="ukraine-logo" width="20" height="32">
+        <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-ukraine"></use></svg
+    ></span>
+  </h3>
+  <div class="swiper-container">
+    <div class="mySwiper swiper">
+      <div class="swiper-wrapper"></div>
+    </div>
+    <button
+      type="button"
+      class="button-next"
+      aria-label="Scroll the funds list"
+    >
+      <svg class="button-next-icon" width="20" height="20">
+        <use href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-btn-arrow-up"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+        </div>
+
+        <div class="main-content">
+          <h1 class="shopping-list-title">
+            Shopping <span class="shopping-list-title-part">List</span>
+          </h1>
+          <ul class="shopping-list"></ul>
+        </div>
+      </section>
+    </div>
+    <div class="backdrop-pop-up is-hidden" data-pop-up data-modal>
+  <div class="modal-pop-up">
+    <button
+      type="button"
+      class="close-button"
+      aria-label="Close"
+      data-modal-close
+    >
+      <svg class="close-button__icon" width="24" height="24">
+        <use class="icon-x-close" href="/js_99_co11aps/assets/icons-5a87309a.svg#icon-x-close"></use>
+      </svg>
+    </button>
+
+    <div class="modal-pop-up-content"></div>
+
+    <div class="modal-pop-up-message-box">
+      <p class="modal-pop-up-message hidden">
+        The book has been added to the <a class="modal-link-to-list" href="./shopping-list.html">shopping list</a>. 
+      </p>
+    </div>
+    
+    <button 
+      aria-label="add or remove book from the shopping list" 
+      type="button" 
+      class="modal-pop-up-btn button">
+      Add to shopping list
+    </button>
+  </div>
+</div>
+
+    
+  </body>
+</html>
