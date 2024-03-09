@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-js-TBTE/",
+    "build": "vite build --base=/js_99_co11aps/",
     "preview": "vite preview"
   },
   "devDependencies": {
